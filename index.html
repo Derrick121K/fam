@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Game Night</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Family Game Night</h1>
+    </header>
+    <main>
+        <section id="host-section">
+            <h2>Host Page</h2>
+            <form id="question-form">
+                <input type="text" id="question" placeholder="Enter your question" required>
+                <input type="file" id="question-image" accept="image/*">
+                <input type="text" id="answer1" placeholder="Answer 1" required>
+                <input type="text" id="answer2" placeholder="Answer 2" required>
+                <input type="text" id="answer3" placeholder="Answer 3" required>
+                <input type="text" id="answer4" placeholder="Answer 4" required>
+                <input type="text" id="answer5" placeholder="Answer 5" required>
+                <input type="text" id="correct-answer" placeholder="Correct Answer" required>
+                <button type="submit">Upload Question</button>
+            </form>
+        </section>
+
+        <section id="join-section">
+            <h2>Join Game</h2>
+            <form id="join-form">
+                <input type="text" id="team-name" placeholder="Enter Team Name" required>
+                <button type="submit">Join Game</button>
+            </form>
+        </section>
+
+        <section id="questions-section">
+            <h2>Questions</h2>
+            <div id="questions-container"></div>
+        </section>
+
+        <section id="score-section">
+            <h2>Scores</h2>
+            <div id="score-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
